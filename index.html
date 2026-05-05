@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tiia Jacklin — Computational Chemistry & NMR</title>
+    <meta
+      name="description"
+      content="Tiia Jacklin — computational chemistry and NMR researcher working on molecular simulation, quantum chemistry, and data-driven modelling."
+    />
+    <meta name="author" content="Tiia Jacklin" />
+    <meta name="color-scheme" content="light dark" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Tiia Jacklin — Computational Chemistry & NMR" />
+    <meta
+      property="og:description"
+      content="Computational chemistry and NMR researcher working across quantum chemistry, atomistic simulation, and data-driven modelling."
+    />
+
+    <link
+      rel="icon"
+      href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230a2a2e'/><path d='M7 6 L25 6 L30 16 L25 26 L7 26 L2 16 Z' stroke='%2356c2c8' stroke-width='1.4' fill='none'/><text x='16' y='18.5' text-anchor='middle' font-family='Arial' font-weight='700' font-size='11' fill='%23e6eef2'>TJ</text></svg>"
+      type="image/svg+xml"
+    />
+
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&f[]=satoshi@400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#portfolio-tabs">Skip to content</a>
+
+    <div class="lattice" aria-hidden="true">
+      <svg width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <pattern id="hex" width="56" height="48.5" patternUnits="userSpaceOnUse">
+            <path
+              d="M14 0 L42 0 L56 24.25 L42 48.5 L14 48.5 L0 24.25 Z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="0.6"
+              opacity="0.45"
+            />
+          </pattern>
+          <radialGradient id="latticeFade" cx="50%" cy="0%" r="80%">
+            <stop offset="0%" stop-color="white" stop-opacity="1" />
+            <stop offset="100%" stop-color="white" stop-opacity="0" />
+          </radialGradient>
+          <mask id="latticeMask">
+            <rect width="100%" height="100%" fill="url(#latticeFade)" />
+          </mask>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#hex)" mask="url(#latticeMask)" />
+      </svg>
+    </div>
+
+    <header class="site-header">
+      <div class="container header-row">
+        <a href="#overview" class="logo" aria-label="Tiia Jacklin home">
+          <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+            <path
+              d="M10 3 L30 3 L38 20 L30 37 L10 37 L2 20 Z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.4"
+            />
+            <path
+              d="M7 28 L11 28 L12 24 L14 32 L16 20 L18 30 L21 27 L33 27"
+              stroke="var(--color-primary)"
+              stroke-width="1.1"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <text
+              x="20"
+              y="19"
+              text-anchor="middle"
+              dominant-baseline="central"
+              font-family="'Cabinet Grotesk', sans-serif"
+              font-weight="800"
+              font-size="13"
+              fill="currentColor"
+              letter-spacing="-0.5"
+            >TJ</text>
+          </svg>
+          <span class="logo-text">
+            <span class="logo-name">Tiia Jacklin</span>
+            <span class="logo-sub">Computational chemistry & NMR</span>
+          </span>
+        </a>
+
+        <button
+          type="button"
+          class="theme-toggle"
+          data-theme-toggle
+          aria-label="Switch to dark mode"
+          title="Toggle theme"
+        ></button>
+      </div>
+    </header>
+
+    <main id="overview">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">
+              <span class="dot" aria-hidden="true"></span>
+              Postdoctoral researcher · INAR, University of Helsinki
+            </p>
+            <h1 class="hero-title">
+              Quantum chemistry, molecular modelling, and NMR for complex molecular systems.
+            </h1>
+            <p class="hero-lede">
+              I am a computational chemistry and physics researcher with a PhD in Physics
+              from the University of Oulu. My work connects electronic-structure
+              calculations, molecular simulation, and data analysis to questions in NMR,
+              carbon nanostructures, and next-generation lubricant modelling.
+            </p>
+            <div class="hero-cta">
+              <button class="btn btn-primary" type="button" data-tab-target="work">
+                Current work
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <button class="btn btn-ghost" type="button" data-tab-target="publications">Publications</button>
+            </div>
+            <ul class="hero-meta" role="list">
+              <li><span class="meta-k">Current role</span><span class="meta-v">Postdoc at INAR from 15 May 2026</span></li>
+              <li><span class="meta-k">PhD defence</span><span class="meta-v">27 Mar 2026</span></li>
+              <li><span class="meta-k">Degree certificate</span><span class="meta-v">11 May 2026</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="tabs-shell" id="portfolio-tabs" aria-label="Portfolio sections">
+        <div class="container">
+          <div class="tabs-layout">
+            <div class="tabs-sidebar">
+              <p class="tabs-label mono">Explore</p>
+              <div class="tab-list" role="tablist" aria-label="Portfolio tabs">
+                <button class="tab-button is-active" id="tab-overview" role="tab" aria-selected="true" aria-controls="panel-overview" data-tab="overview">Overview</button>
+                <button class="tab-button" id="tab-work" role="tab" aria-selected="false" aria-controls="panel-work" data-tab="work">Current work</button>
+                <button class="tab-button" id="tab-research" role="tab" aria-selected="false" aria-controls="panel-research" data-tab="research">Research</button>
+                <button class="tab-button" id="tab-methods" role="tab" aria-selected="false" aria-controls="panel-methods" data-tab="methods">Methods</button>
+                <button class="tab-button" id="tab-publications" role="tab" aria-selected="false" aria-controls="panel-publications" data-tab="publications">Publications</button>
+                <button class="tab-button" id="tab-timeline" role="tab" aria-selected="false" aria-controls="panel-timeline" data-tab="timeline">Timeline</button>
+                <button class="tab-button" id="tab-talks" role="tab" aria-selected="false" aria-controls="panel-talks" data-tab="talks">Conferences</button>
+                <button class="tab-button" id="tab-contact" role="tab" aria-selected="false" aria-controls="panel-contact" data-tab="contact">Contact</button>
+              </div>
+            </div>
+
+            <div class="tab-panels">
+              <section class="tab-panel is-active" id="panel-overview" role="tabpanel" tabindex="0" aria-labelledby="tab-overview" data-panel="overview">
+                <header class="section-head">
+                  <span class="section-num">01</span>
+                  <h2 class="section-title">Profile</h2>
+                  <p class="section-kicker">
+                    My research background is in computational NMR, carbon nanostructures,
+                    quantum chemistry, and atomistic simulation. I am now extending that
+                    background toward atmospheric science and lubricant modelling at INAR.
+                  </p>
+                </header>
+
+                <div class="overview-grid">
+                  <article class="feature-card">
+                    <h3>Academic depth</h3>
+                    <p>
+                      PhD work on computational NMR studies of carbon nanostructures,
+                      including fullerene C₆₀ and xenon NMR in carbon nanotube systems.
+                    </p>
+                  </article>
+                  <article class="feature-card">
+                    <h3>Industry-relevant modelling</h3>
+                    <p>
+                      Strong foundation in Python workflows, HPC environments, automated
+                      analysis, structure-property modelling, and reproducible scientific computing.
+                    </p>
+                  </article>
+                  <article class="feature-card">
+                    <h3>Next direction</h3>
+                    <p>
+                      Postdoctoral work in the ORCTOOL project will focus on jet engine
+                      lubricant modelling using quantum chemical methods, group contribution
+                      methods, and machine learning.
+                    </p>
+                  </article>
+                </div>
+              </section>
+
+              <section class="tab-panel" id="panel-work" role="tabpanel" tabindex="0" aria-labelledby="tab-work" data-panel="work" hidden>
+                <header class="section-head">
+                  <span class="section-num">02</span>
+                  <h2 class="section-title">Current work</h2>
+                  <p class="section-kicker">
+                    Postdoctoral researcher at the Institute for Atmospheric and Earth
+                    System Research (INAR), University of Helsinki, starting 15 May 2026.
+                  </p>
+                </header>
+
+                <div class="work-card">
+                  <div>
+                    <p class="card-label mono">ORCTOOL project</p>
+                    <h3>Modelling jet engine lubricants across chemical scales</h3>
+                    <p>
+                      My main postdoctoral project will combine quantum chemical methods,
+                      group contribution methods, and machine-learning approaches to model
+                      jet engine lubricants. This builds naturally on my background in
+                      electronic-structure calculations, molecular simulation, and
+                      structure-property relationships, while expanding into new data-driven
+                      modelling workflows.
+                    </p>
+                  </div>
+                  <ul class="focus-list" role="list">
+                    <li>Quantum chemical calculations for molecular-level properties</li>
+                    <li>Group contribution methods for efficient property estimation</li>
+                    <li>Machine-learning methods as a developing postdoctoral focus</li>
+                    <li>Atmospheric and applied chemistry context through INAR</li>
+                  </ul>
+                </div>
+              </section>
+
+              <section class="tab-panel" id="panel-research" role="tabpanel" tabindex="0" aria-labelledby="tab-research" data-panel="research" hidden>
+                <header class="section-head">
+                  <span class="section-num">03</span>
+                  <h2 class="section-title">Research focus</h2>
+                  <p class="section-kicker">
+                    Accurate molecular modelling of spectroscopic and thermodynamic
+                    observables, with emphasis on how local structure, dynamics, and
+                    environment shape measured NMR parameters.
+                  </p>
+                </header>
+
+                <div class="research-grid">
+                  <article class="research-card">
+                    <div class="card-num mono">03.1</div>
+                    <h3>Electronic structure and NMR shielding</h3>
+                    <p>
+                      DFT calculations of ¹³C and ¹²⁹Xe chemical shifts and magnetic
+                      shieldings in fullerenes and carbon nanotubes.
+                    </p>
+                  </article>
+                  <article class="research-card">
+                    <div class="card-num mono">03.2</div>
+                    <h3>Structure-property relationships</h3>
+                    <p>
+                      Modelling how molecular geometry, local environment, and thermal
+                      motion affect NMR observables and thermodynamic behaviour.
+                    </p>
+                  </article>
+                  <article class="research-card">
+                    <div class="card-num mono">03.3</div>
+                    <h3>Simulation workflows</h3>
+                    <p>
+                      Molecular dynamics, Monte Carlo sampling, and automated Python
+                      analysis workflows for carbon nanostructures and related systems.
+                    </p>
+                  </article>
+                  <article class="research-card">
+                    <div class="card-num mono">03.4</div>
+                    <h3>Collaborative ML studies</h3>
+                    <p>
+                      Provided and interpreted simulation data used by collaborators in
+                      ML-accelerated MD and PIMD studies; deeper ML modelling will be a
+                      developing part of my postdoctoral work.
+                    </p>
+                  </article>
+                </div>
+
+                <p class="thesis-callout">
+                  <span class="callout-tag mono">PhD thesis</span>
+                  <span>
+                    <strong>Computational NMR studies in carbon nanostructures.</strong>
+                    The thesis used quantum chemical calculations and atomistic simulations
+                    to study NMR parameters in C₆₀ fullerene and carbon nanotube systems,
+                    including ¹²⁹Xe NMR sensitivity to nanotube environments.
+                    <a href="https://urn.fi/URN:NBN:fi:oulu-202603112122" target="_blank" rel="noopener">Thesis URN →</a>
+                  </span>
+                </p>
+              </section>
+
+              <section class="tab-panel" id="panel-methods" role="tabpanel" tabindex="0" aria-labelledby="tab-methods" data-panel="methods" hidden>
+                <header class="section-head">
+                  <span class="section-num">04</span>
+                  <h2 class="section-title">Methods and tools</h2>
+                  <p class="section-kicker">
+                    A scientific computing toolkit spanning quantum chemistry, HPC,
+                    Python-based analysis, visualization, and developing data-science skills.
+                  </p>
+                </header>
+
+                <div class="skills-grid">
+                  <div class="skill-block"><h3 class="skill-title">Programming and data</h3><ul class="chip-list" role="list"><li>Python</li><li>NumPy</li><li>SciPy</li><li>pandas</li><li>matplotlib</li><li>seaborn</li><li>ASE</li><li>SQL <em>basic</em></li><li>bash</li><li>git</li><li>Linux</li></ul></div>
+                  <div class="skill-block"><h3 class="skill-title">HPC and automation</h3><ul class="chip-list" role="list"><li>Slurm</li><li>MPI / OpenMP</li><li>module systems</li><li>job pipelines</li><li>workflow scripting</li><li>reproducible runs</li></ul></div>
+                  <div class="skill-block"><h3 class="skill-title">Electronic structure</h3><ul class="chip-list" role="list"><li>DFT</li><li>ADF / AMS</li><li>Turbomole</li><li>CASTEP</li><li>VASP</li><li>Dalton</li><li>ORCA</li><li>xTB</li></ul></div>
+                  <div class="skill-block"><h3 class="skill-title">Dynamics and sampling</h3><ul class="chip-list" role="list"><li>DFTB+</li><li>xTB MD</li><li>i-PI</li><li>Monte Carlo</li><li>trajectory analysis</li><li>ensemble averaging</li></ul></div>
+                  <div class="skill-block"><h3 class="skill-title">NMR computation</h3><ul class="chip-list" role="list"><li>¹³C shifts and shieldings</li><li>¹²⁹Xe NMR</li><li>structure-property modelling</li><li>thermal effects</li></ul></div>
+                  <div class="skill-block"><h3 class="skill-title">Machine learning</h3><ul class="chip-list" role="list"><li>regression models</li><li>tree-based models</li><li>feature engineering</li><li>model evaluation</li><li>developing postdoc focus</li></ul></div>
+                  <div class="skill-block"><h3 class="skill-title">Visualization and reporting</h3><ul class="chip-list" role="list"><li>Gnuplot</li><li>VMD</li><li>ParaView</li><li>Inkscape</li><li>scientific figures</li><li>conference posters</li></ul></div>
+                  <div class="skill-block"><h3 class="skill-title">Languages</h3><ul class="chip-list" role="list"><li>Finnish <em>native</em></li><li>English <em>fluent</em></li><li>Swedish <em>intermediate</em></li><li>French <em>basics</em></li></ul></div>
+                </div>
+              </section>
+
+              <section class="tab-panel" id="panel-publications" role="tabpanel" tabindex="0" aria-labelledby="tab-publications" data-panel="publications" hidden>
+                <header class="section-head">
+                  <span class="section-num">05</span>
+                  <h2 class="section-title">Publications</h2>
+                  <p class="section-kicker">
+                    Publication status can be updated as manuscripts move from submitted
+                    to published. Article links include an access badge where known.
+                  </p>
+                </header>
+
+                <ol class="pub-list" role="list">
+                  <li class="pub">
+                    <div class="pub-status pub-status-published"><span class="status-dot" aria-hidden="true"></span><span>Published · 2025</span><span class="pub-kind">Article</span></div>
+                    <div>
+                      <h3 class="pub-title">
+                        <button class="pub-title-button" type="button" aria-expanded="false" aria-controls="abstract-c60">
+                          <span>Quantum-mechanical treatment of thermal effects on the structure and ¹³C NMR shielding of buckminsterfullerene C₆₀</span>
+                          <svg class="pub-toggle-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+                        </button>
+                      </h3>
+                      <p class="pub-authors"><strong>Jacklin, T.</strong>; Štěpánek, P.; Lantto, P.</p>
+                      <p class="pub-venue">
+                        <em>Phys. Chem. Chem. Phys.</em>, 2025 ·
+                        <a class="article-link" href="https://pubs.rsc.org/en/content/articlehtml/2025/cp/d5cp01484k" target="_blank" rel="noopener">
+                          <span class="access-badge oa" aria-label="Open access article">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 11V8a5 5 0 0 1 9.6-2" /><rect x="5" y="11" width="14" height="10" rx="2" /></svg>
+                          </span>
+                          10.1039/d5cp01484k
+                        </a>
+                      </p>
+                      <div class="pub-abstract" id="abstract-c60" hidden>
+                        <p class="abstract-label mono">Abstract</p>
+                        <p>
+                          We investigate thermal effects on the structure and ¹³C nuclear magnetic resonance (NMR) shielding of buckminsterfullerene, C₆₀, using a quantum-mechanical treatment of thermal rovibrational motion at the density functional theory (DFT) level. Volumes calculated from the temperature-dependent effective geometries confirm that C₆₀ fullerene indeed experiences negative thermal expansion (NTE). However, the NTE is much smaller and occurs at temperatures higher than previously predicted by classical MD simulations, above T = 100 K. The normal mode analysis of the contributions to the effective geometry reveals that the NTE is caused by a single low-frequency, fully symmetric, Ag(1) breathing mode instead of previously alleged quadrupolar modes. Although the effect of centrifugal distortion on the Ag(1) mode monotonically increases the volume of C₆₀ at finite temperatures, the NTE is caused by the negative anharmonic vibrational correction that activates above T = 100 K and reaches a minimum around T = 320 K. The validity of the current rovibrational approach is further confirmed by good agreement with the experimental results of temperature dependence of ¹³C NMR shielding as well as its secondary isotope shifts. For them, the harmonic vibrational correction is the main contribution and also plays a dominant role in thermal effects, whereas the effective geometry contribution is smaller. The temperature dependence of the harmonic vibrational correction is due to several low-frequency normal modes different from Ag(1), and therefore, the NTE is not observed in ¹³C NMR shielding and isotope shifts.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="pub pub-thesis">
+                    <div class="pub-status pub-status-thesis"><span class="status-dot" aria-hidden="true"></span><span>Published · 2026</span><span class="pub-kind">Thesis</span></div>
+                    <div>
+                      <h3 class="pub-title">
+                        <button class="pub-title-button" type="button" aria-expanded="false" aria-controls="abstract-thesis">
+                          <span>Computational NMR studies in carbon nanostructures</span>
+                          <svg class="pub-toggle-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+                        </button>
+                      </h3>
+                      <p class="pub-authors"><strong>Jacklin, T.</strong></p>
+                      <p class="pub-venue">
+                        Doctoral dissertation, University of Oulu ·
+                        <a class="article-link" href="https://urn.fi/URN:NBN:fi:oulu-202603112122" target="_blank" rel="noopener">
+                          <span class="access-badge oa" aria-label="Open access thesis">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 11V8a5 5 0 0 1 9.6-2" /><rect x="5" y="11" width="14" height="10" rx="2" /></svg>
+                          </span>
+                          URN:NBN:fi:oulu-202603112122
+                        </a>
+                      </p>
+                      <div class="pub-abstract" id="abstract-thesis" hidden>
+                        <p class="abstract-label mono">Abstract</p>
+                        <p>
+                          Nuclear magnetic resonance (NMR) spectroscopy is a powerful, non-destructive technique for probing atomic-scale structure and dynamics in materials. In the context of carbon nanomaterials, NMR is sensitive to local environments and can reveal essential features of molecular confinement and host-guest interactions. Yet, many phenomena remain difficult to interpret due to experimental limitations. Computational approaches, including quantum chemical calculations and atomistic simulations, complement experiments by providing atomic-level detail and control not accessible in laboratory measurements.
+                        </p>
+                        <p>
+                          This thesis aims to advance the understanding of NMR chemical shifts in carbon nanomaterials, specifically fullerene C₆₀ and carbon nanotubes (CNTs), using quantum chemical calculations, Monte Carlo (MC), and molecular dynamics (MD) simulations, thereby providing insights into previously unexplained experimental observations.
+                        </p>
+                        <p>
+                          The first study confirms negative thermal expansion in C₆₀, identifies its vibrational origin, and accurately models the temperature dependence of the ¹³C chemical shift and secondary isotope shifts. The second study elucidates the dependency of the ¹²⁹Xe chemical shift on temperature and xenon density within CNTs, revealing that the observed trends reflect a competition between xenon-xenon interactions and adsorption geometry, which vary with confinement environment and tube diameter. Thermal contributions to the ¹²⁹Xe chemical shift remain modest for low-density xenon gas in CNTs. The third study demonstrates that the ¹²⁹Xe chemical shift in CNTs is influenced by the electronic type of the nanotube as the dominant factor, while the diameter exerts a secondary but discernible effect, and chirality plays only a minor role. Chemical shift dependence on the adsorption site is detailed for both individual tubes and bundles of multiple CNTs, and includes the observation of an unexpectedly negative internal shift consistent with earlier theoretical predictions based on nucleus-independent chemical shift calculations.
+                        </p>
+                        <p>
+                          Collectively, these findings highlight the subtle influence of structure and dynamics on NMR observables in carbon nanomaterials, validate computational methodologies for their prediction, and provide guidance for future experimental and theoretical work. Through the analysis of the NMR parameters, deeper insight into the electromagnetic response of these nanostructures is obtained.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- Non-open-access link example for later editing:
+                  <a class="article-link" href="ARTICLE_URL" target="_blank" rel="noopener">
+                    <span class="access-badge closed" aria-label="Closed access article">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 11V8a5 5 0 0 1 10 0v3" /><rect x="5" y="11" width="14" height="10" rx="2" /></svg>
+                    </span>
+                    DOI_OR_LINK_TEXT
+                  </a>
+                  -->
+                  <li class="pub">
+                    <div class="pub-status pub-status-submitted"><span class="status-dot" aria-hidden="true"></span><span>Submitted · 2026</span><span class="pub-kind">Article</span></div>
+                    <div><h3 class="pub-title">Machine learning–accelerated path integral molecular dynamics and ¹³C NMR simulations unlock new insights into quantum effects in C₆₀ fullerene</h3><p class="pub-authors">Laurila, O.; <strong>Jacklin, T.</strong>; Zakary, O.; Lantto, P.</p></div>
+                  </li>
+                  <li class="pub">
+                    <div class="pub-status pub-status-submitted"><span class="status-dot" aria-hidden="true"></span><span>Submitted · 2026</span><span class="pub-kind">Article</span></div>
+                    <div><h3 class="pub-title">Modeling ¹²⁹Xe NMR chemical shift sensitivity in carbon nanotube systems</h3><p class="pub-authors"><strong>Jacklin, T.</strong>; Štěpánek, P.; Lantto, P.</p></div>
+                  </li>
+                  <li class="pub">
+                    <div class="pub-status pub-status-submitted"><span class="status-dot" aria-hidden="true"></span><span>Submitted · 2026</span><span class="pub-kind">Article</span></div>
+                    <div><h3 class="pub-title">Transport properties in carbon nanotubes investigated using machine-learning–accelerated molecular dynamics and ¹²⁹Xe NMR simulations</h3><p class="pub-authors">Zakary, O.; <strong>Jacklin, T.</strong>; Lantto, P.</p></div>
+                  </li>
+                  <li class="pub">
+                    <div class="pub-status pub-status-prep"><span class="status-dot" aria-hidden="true"></span><span>In preparation · 2026</span><span class="pub-kind">Article</span></div>
+                    <div><h3 class="pub-title">Magnetic shielding in carbon nanotubes revealed by ¹²⁹Xe NMR shifts</h3><p class="pub-authors"><strong>Jacklin, T.</strong>; Kantola, A. M.; Khalili, R.; Komulainen, S.; Vaara, J.; Telkki, V.-V.; Lantto, P.</p></div>
+                  </li>
+                </ol>
+              </section>
+
+              <section class="tab-panel" id="panel-timeline" role="tabpanel" tabindex="0" aria-labelledby="tab-timeline" data-panel="timeline" hidden>
+                <header class="section-head">
+                  <span class="section-num">06</span>
+                  <h2 class="section-title">Experience and education</h2>
+                  <p class="section-kicker">
+                    A chronological view that combines degrees with the research roles
+                    in which the work was carried out.
+                  </p>
+                </header>
+
+                <ol class="timeline" role="list">
+                  <li class="tl-item"><div class="tl-when mono">2026 —</div><div class="tl-body"><h3>Postdoctoral researcher · ORCTOOL project</h3><p class="tl-org">INAR · University of Helsinki</p><p>Modelling jet engine lubricants using quantum chemical methods, group contribution methods, and machine-learning approaches.</p></div></li>
+                  <li class="tl-item"><div class="tl-when mono">2021 — 2026</div><div class="tl-body"><h3>PhD, Physics · Doctoral researcher</h3><p class="tl-org">NMR Research Unit · University of Oulu</p><p>Defended 27 March 2026; degree certificate expected 11 May 2026. Thesis: <em>Computational NMR studies in carbon nanostructures.</em> Research focused on quantum-chemical and atomistic modelling of NMR parameters in C₆₀ and carbon nanotube systems.</p></div></li>
+                  <li class="tl-item"><div class="tl-when mono">2018 — 2020</div><div class="tl-body"><h3>Project researcher / research assistant</h3><p class="tl-org">NMR Research Unit · University of Oulu</p><p>Supported computational NMR and materials modelling projects through simulation data, analysis scripts, and visualizations for publications and presentations.</p></div></li>
+                  <li class="tl-item"><div class="tl-when mono">2020</div><div class="tl-body"><h3>MSc, Physical Sciences</h3><p class="tl-org">University of Oulu</p></div></li>
+                  <li class="tl-item"><div class="tl-when mono">2018</div><div class="tl-body"><h3>BSc, Physics</h3><p class="tl-org">University of Oulu</p></div></li>
+                </ol>
+
+                <div class="extras-grid">
+                  <div class="extras-block"><h3 class="extras-title">Teaching and supervision</h3><ul role="list"><li>Organised exercise sessions for bachelor-level Thermophysics, 2021–2023.</li><li>Supervised a bachelor-level exchange student research project, 2023.</li></ul></div>
+                  <div class="extras-block"><h3 class="extras-title">Funding</h3><ul role="list"><li>Travel grant €2,200 · Otto A. Malm foundation, 2024.</li><li>Travel grant €1,600 · Oscar Öflunds stiftelse sr, 2023.</li></ul></div>
+                </div>
+              </section>
+
+              <section class="tab-panel" id="panel-talks" role="tabpanel" tabindex="0" aria-labelledby="tab-talks" data-panel="talks" hidden>
+                <header class="section-head">
+                  <span class="section-num">07</span>
+                  <h2 class="section-title">Conferences</h2>
+                  <p class="section-kicker">Selected oral and poster presentations at NMR, computational chemistry, and physics meetings.</p>
+                </header>
+                <div class="talks-grid">
+                  <div class="talks-col"><h3 class="talks-head">Oral presentations</h3><ul class="talks-list" role="list"><li><span class="talk-year mono">2024</span><span class="talk-body"><strong>CSBC, Turku.</strong> Temperature effects in the chemical shift of xenon in carbon nanotubes.</span></li><li><span class="talk-year mono">2022</span><span class="talk-body"><strong>MRPM, hybrid.</strong> Modeling Xe NMR in carbon nanotubes.</span></li></ul></div>
+                  <div class="talks-col"><h3 class="talks-head">Poster presentations</h3><ul class="talks-list" role="list"><li><span class="talk-year mono">2025</span><span class="talk-body"><strong>EUROMAR, Oulu.</strong> Computational Xe NMR in carbon nanotubes.</span></li><li><span class="talk-year mono">2025</span><span class="talk-body"><strong>Computational Chemistry Days, Espoo.</strong> Quantum-mechanical treatment of thermal effects on NMR of buckminsterfullerene: negative thermal expansion, chemical shift and isotope shifts.</span></li><li><span class="talk-year mono">2025</span><span class="talk-body"><strong>Physics Days, Oulu.</strong> Quantum-mechanical treatment of thermal effects on NMR of buckminsterfullerene: negative thermal expansion, chemical shift and isotope shifts.</span></li><li><span class="talk-year mono">2024</span><span class="talk-body"><strong>MRPM, Tromsø.</strong> Quantum-mechanical treatment of thermal effects on NMR of buckminsterfullerene: negative thermal expansion, chemical shift and isotope shifts.</span></li><li><span class="talk-year mono">2024</span><span class="talk-body"><strong>EUROMAR, Bilbao.</strong> Quantum-mechanical treatment of thermal effects on NMR of buckminsterfullerene: negative thermal expansion, chemical shift and isotope shifts.</span></li><li><span class="talk-year mono">2023</span><span class="talk-body"><strong>EUROMAR, Glasgow.</strong> Computational chemical shift of xenon in carbon nanotubes.</span></li><li><span class="talk-year mono">2023</span><span class="talk-body"><strong>NSS, Jyväskylä.</strong> Thermal contraction of C₆₀ and its effect on ¹³C-NMR isotope shifts.</span></li><li><span class="talk-year mono">2023</span><span class="talk-body"><strong>Computational Chemistry Days, Oulu.</strong> Computational chemical shift of xenon in carbon nanotubes.</span></li><li><span class="talk-year mono">2022</span><span class="talk-body"><strong>CSBC, Kuopio.</strong> Computational chemical shift of xenon in carbon nanotubes.</span></li></ul></div>
+                </div>
+              </section>
+
+              <section class="tab-panel" id="panel-contact" role="tabpanel" tabindex="0" aria-labelledby="tab-contact" data-panel="contact" hidden>
+                <header class="section-head">
+                  <span class="section-num">08</span>
+                  <h2 class="section-title">Contact</h2>
+                  <p class="section-kicker">
+                    The best ways to reach me are email and LinkedIn. ORCID provides
+                    academic context and a persistent researcher identifier.
+                  </p>
+                </header>
+                <ul class="contact-links" role="list">
+                  <li><a class="contact-link" href="mailto:tiia.jacklin@gmail.com"><span class="cl-label">Email</span><span class="cl-value">tiia.jacklin@gmail.com</span><span class="cl-arrow" aria-hidden="true">→</span></a></li>
+                  <li><a class="contact-link" href="https://www.linkedin.com/in/tiia-jacklin-515937316/" target="_blank" rel="noopener"><span class="cl-label">LinkedIn</span><span class="cl-value">tiia-jacklin</span><span class="cl-arrow" aria-hidden="true">↗</span></a></li>
+                  <li><a class="contact-link" href="https://orcid.org/0009-0006-4441-4610" target="_blank" rel="noopener"><span class="cl-label">ORCID</span><span class="cl-value">0009-0006-4441-4610</span><span class="cl-arrow" aria-hidden="true">↗</span></a></li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <span>© <span id="y"></span> Tiia Jacklin · Finland</span>
+        <span class="footer-meta mono">Static portfolio mock-up · v0.2</span>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('y').textContent = new Date().getFullYear();
+
+      (function () {
+        const t = document.querySelector('[data-theme-toggle]');
+        const r = document.documentElement;
+        const sun = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path stroke-linecap="round" d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M4.6 19.4l1.4-1.4M18 6l1.4-1.4"/></svg>';
+        const moon = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 12.6A9 9 0 1 1 11.4 3a7 7 0 0 0 9.6 9.6Z" stroke-linejoin="round"/></svg>';
+        let d = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        const render = () => {
+          r.setAttribute('data-theme', d);
+          t.innerHTML = d === 'dark' ? sun : moon;
+          t.setAttribute('aria-label', 'Switch to ' + (d === 'dark' ? 'light' : 'dark') + ' mode');
+        };
+        render();
+        t.addEventListener('click', () => {
+          d = d === 'dark' ? 'light' : 'dark';
+          render();
+        });
+      })();
+
+      (function () {
+        const buttons = Array.from(document.querySelectorAll('[role="tab"]'));
+        const panels = Array.from(document.querySelectorAll('[role="tabpanel"]'));
+
+        function activate(name, shouldFocus) {
+          buttons.forEach((button) => {
+            const active = button.dataset.tab === name;
+            button.classList.toggle('is-active', active);
+            button.setAttribute('aria-selected', active ? 'true' : 'false');
+            button.tabIndex = active ? 0 : -1;
+          });
+          panels.forEach((panel) => {
+            const active = panel.dataset.panel === name;
+            panel.classList.toggle('is-active', active);
+            panel.hidden = !active;
+          });
+          if (shouldFocus) {
+            const panel = panels.find((p) => p.dataset.panel === name);
+            panel && panel.focus({ preventScroll: true });
+          }
+        }
+
+        buttons.forEach((button, index) => {
+          button.addEventListener('click', () => activate(button.dataset.tab, false));
+          button.addEventListener('keydown', (event) => {
+            const dir = event.key === 'ArrowRight' || event.key === 'ArrowDown' ? 1 : event.key === 'ArrowLeft' || event.key === 'ArrowUp' ? -1 : 0;
+            if (!dir) return;
+            event.preventDefault();
+            const next = buttons[(index + dir + buttons.length) % buttons.length];
+            next.focus();
+            activate(next.dataset.tab, false);
+          });
+        });
+
+        document.querySelectorAll('[data-tab-target]').forEach((trigger) => {
+          trigger.addEventListener('click', () => {
+            activate(trigger.dataset.tabTarget, true);
+            document.getElementById('portfolio-tabs').scrollIntoView({ behavior: 'smooth', block: 'start' });
+          });
+        });
+      })();
+
+      (function () {
+        document.querySelectorAll('.pub-title-button').forEach((button) => {
+          button.addEventListener('click', () => {
+            const target = document.getElementById(button.getAttribute('aria-controls'));
+            const expanded = button.getAttribute('aria-expanded') === 'true';
+            button.setAttribute('aria-expanded', String(!expanded));
+            if (target) target.hidden = expanded;
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>
