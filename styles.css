@@ -474,6 +474,7 @@ a:hover { color: var(--color-primary-hover); }
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
+  align-self: center;
 }
 .focus-list li {
   position: relative;
